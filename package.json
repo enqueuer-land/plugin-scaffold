@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/enqueuer-land/plugin-scaffold#readme",
   "devDependencies": {
-    "@types/node": "^11.9.5",
+    "@types/node": "^11.11.0",
     "ts-node": "^8.0.2",
     "tslint": "^5.13.0",
     "typescript": "^3.3.3333"
