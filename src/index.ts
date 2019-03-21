@@ -2,6 +2,8 @@ import {MySubscription} from './my-subscription';
 import {MyPublisher} from './my-publisher';
 import {MainInstance, PublisherModel, PublisherProtocol, SubscriptionModel, SubscriptionProtocol} from 'enqueuer-plugins-template';
 import {MyReportFormatter} from './my-formatter';
+import {MyParser} from './my-parser';
+import {MyAsserter} from './my-asserter';
 
 //Enqueuer demands a 'entryPoint' method in the index file to the plugin work correctly
 export function entryPoint(mainInstance: MainInstance): void {
@@ -22,5 +24,7 @@ export function entryPoint(mainInstance: MainInstance): void {
     mainInstance.protocolManager.addProtocol(myPublisher);
 
     mainInstance.reportFormatterManager.addReportFormatter(() => new MyReportFormatter(), 'my-plugin');
+    mainInstance.objectParserManager.addObjectParser(() => new MyParser(), 'nqr');
+    mainInstance.asserterManager.addAsserter( {assertThat: 'actual value', is: 'expected value'}, () => new MyAsserter());
 
 }

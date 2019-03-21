@@ -12,3 +12,5 @@ subscriptions:
             expectToBeDefined: `asd`
         -   name: number
             expectToBeDefined: 123
+        -   assertThat: 123
+            is: 123

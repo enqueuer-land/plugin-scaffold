@@ -1,0 +1,94 @@
+{
+  "valid": true,
+  "tests": [],
+  "name": "enqueuer",
+  "id": "1509530843_120fa3ea0e_635212",
+  "ignored": false,
+  "subscriptions": [],
+  "publishers": [],
+  "time": {
+    "startTime": "2019-03-21T18:09:53.847Z",
+    "endTime": "2019-03-21T18:09:53.858Z",
+    "totalTime": 11
+  },
+  "requisitions": [
+    {
+      "valid": true,
+      "tests": [],
+      "name": "examples/test.yml",
+      "id": "1509530844_a78263b2f1_686370",
+      "ignored": false,
+      "subscriptions": [
+        {
+          "id": "1509530844_22cd02d611_680948",
+          "name": "Subscription #0",
+          "type": "my-plugin",
+          "tests": [
+            {
+              "name": "received",
+              "valid": true,
+              "description": "Expecting 'undefined' to be defined"
+            },
+            {
+              "name": "number",
+              "valid": true,
+              "description": "Expecting 'undefined' to be defined"
+            },
+            {
+              "name": "Assertion #2",
+              "valid": true,
+              "description": "Assert that 123 is 123, got 123"
+            },
+            {
+              "valid": true,
+              "name": "Message received",
+              "description": "Subscription has received its message"
+            }
+          ],
+          "valid": true,
+          "connectionTime": "2019-03-21T18:09:53.851Z",
+          "messageReceived": {
+            "received": "asd",
+            "number": 123
+          }
+        }
+      ],
+      "publishers": [
+        {
+          "id": "1509530844_5299b1d39a_427692",
+          "name": "Publisher #0",
+          "valid": true,
+          "type": "my-plugin",
+          "tests": [
+            {
+              "name": "Published",
+              "valid": true,
+              "description": "Published successfully"
+            },
+            {
+              "name": "Assertion #0",
+              "valid": true,
+              "description": "Expected 'data' to be equal to 'someValue'. Received 'someValue'"
+            },
+            {
+              "name": "Response message received",
+              "valid": true,
+              "description": "Response message was received"
+            }
+          ],
+          "publishTime": "2019-03-21T18:09:53.853Z",
+          "messageReceived": {
+            "data": "someValue"
+          }
+        }
+      ],
+      "time": {
+        "startTime": "2019-03-21T18:09:53.848Z",
+        "endTime": "2019-03-21T18:09:53.855Z",
+        "totalTime": 7,
+        "timeout": 5000
+      },
+      "requisitions": []
+    }
+  ]
+}

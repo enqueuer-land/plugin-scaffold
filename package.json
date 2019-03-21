@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "all": "rm generatedFile.json || npm run clean && npm run lint && npm run build && npm run checkInstall && npm run test",
-    "checkInstall": "nqr -p my-plugin -c conf/nqr.yml -l `pwd` && nqr -f my-plugin -c conf/nqr.yml -l `pwd`",
+    "checkInstall": "nqr -p my-plugin -c conf/nqr.yml -l `pwd` && nqr -f my-plugin -c conf/nqr.yml -l `pwd` && nqr -e nqr -c conf/nqr.yml -l `pwd` && nqr -t assertThat -c conf/nqr.yml -l `pwd`",
     "build": "tsc",
     "test": "nqr -l `pwd` conf/nqr.yml",
     "clean": "rm -rf dist",
@@ -35,6 +35,6 @@
     "typescript": "^3.3.3333"
   },
   "dependencies": {
-    "enqueuer-plugins-template": "^1.0.7"
+    "enqueuer-plugins-template": "^1.0.9"
   }
 }
