@@ -1,7 +1,10 @@
+[![Greenkeeper badge](https://badges.greenkeeper.io/enqueuer-land/plugin-scaffold.svg)](https://greenkeeper.io/)
+
 Save time and headaches, and create a more easily maintainable [enqueuer](http://github.com/enqueuer-land/enqueuer) plugins
 This canonical version can serve as a reference, or a starting point all on its own.
 
 #### Get it
+
 Clone this `$ git clone http://github.com/enqueuer-land/plugin-scaffold` or download as zip file.
 
 #### Rename it
@@ -9,7 +12,7 @@ Give it a meaningful name. Such as:
 - [enqueuer-plugin-amqp](http://github.com/enqueuer-land/enqueuer-plugin-amqp) 
 - [enqueuer-plugin-mqtt](http://github.com/enqueuer-land/enqueuer-plugin-mqtt) 
 - [enqueuer-plugin-ws](https://github.com/williamsdevaccount/enqueuer-plugin-ws) 
-- [enqueuer-plugin-ws](http://github.com/enqueuer-land/enqueuer-plugin-html-report) 
+- [enqueuer-plugin-html-report](http://github.com/enqueuer-land/enqueuer-plugin-html-report) 
 
 #### Get rid of the useless stuff
 Thinking about creating only a publisher? No problem, go ahead and delete all the subscription and formatter related stuff.
