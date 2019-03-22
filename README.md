@@ -15,8 +15,12 @@ Give it a meaningful name. Such as:
 - [enqueuer-plugin-html-report](http://github.com/enqueuer-land/enqueuer-plugin-html-report) 
 
 #### Get rid of the useless stuff
-Thinking about creating only a publisher? No problem, go ahead and delete all the subscription and formatter related stuff.
+Thinking about creating only a publisher? No problem, go ahead and delete everything else.
 The same applies to every property.
+
+#### Enqueuer compliance
+In order to be enqueuer compatible, a module has to have an `entryPoint` exported function in its main file and, in its package.json file, it has to have either 'enqueuer' or 'nqr' as keywords.
+
 
 #### Install it
 Install it `$ npm install` and install any dependency of yours `$ npm i my-dependency`
