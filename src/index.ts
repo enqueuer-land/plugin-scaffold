@@ -25,6 +25,12 @@ export function entryPoint(mainInstance: MainInstance): void {
 
     mainInstance.reportFormatterManager.addReportFormatter(() => new MyReportFormatter(), 'my-plugin');
     mainInstance.objectParserManager.addObjectParser(() => new MyParser(), 'nqr');
-    mainInstance.asserterManager.addAsserter( {assertThat: 'actual value', is: 'expected value'}, () => new MyAsserter());
+    mainInstance.asserterManager.addAsserter({
+        assertThat: {
+            description: 'actual value'
+        }, is: {
+            description: 'expected value'
+        }
+    }, () => new MyAsserter());
 
 }
