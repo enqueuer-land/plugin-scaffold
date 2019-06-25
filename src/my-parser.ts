@@ -1,4 +1,4 @@
-import {ObjectParser} from 'enqueuer-plugins-template';
+import {ObjectParser} from 'enqueuer';
 
 export class MyParser implements ObjectParser {
 

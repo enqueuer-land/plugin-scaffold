@@ -1,4 +1,4 @@
-import {Subscription, SubscriptionModel} from 'enqueuer-plugins-template';
+import {InputSubscriptionModel as SubscriptionModel, Subscription} from 'enqueuer';
 
 export class MySubscription extends Subscription {
 
@@ -6,22 +6,25 @@ export class MySubscription extends Subscription {
         super(subscriptionModel);
     }
 
-    public async receiveMessage(): Promise<any> {
+    public async receiveMessage(): Promise<void> {
         //Get the message and send it back as this method return
-        return {received: 'asd', number: 123};
+        this.executeHookEvent('onMessageReceived', {value: this.received, numeral: this.number});
     }
 
     public async subscribe(): Promise<void> {
         //Override it to open a server, register a listener or something similar
+        this.executeHookEvent('onSubscribed', {subscribed: 'yay'});
     }
 
     public async unsubscribe(): Promise<void> {
-        //Hook method
         //Override it if you need to close a server, remove a listener or something similar
+        this.executeHookEvent('onUnsubscribed', {unsubscribed: 'noo'});
     }
 
     public async sendResponse(): Promise<void> {
         //If it's a synchronous protocol, feel free to send a response back
+        console.log('virgs');
+        this.executeHookEvent('onResponseSent', {response: 'sync'});
     }
 
 }

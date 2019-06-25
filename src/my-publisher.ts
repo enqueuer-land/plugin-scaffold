@@ -1,4 +1,4 @@
-import {Publisher, PublisherModel} from 'enqueuer-plugins-template';
+import {Publisher, InputPublisherModel as PublisherModel} from 'enqueuer';
 
 export class MyPublisher extends Publisher {
 
@@ -8,8 +8,8 @@ export class MyPublisher extends Publisher {
 
     public async publish(): Promise<void> {
         //Publish it to somewhere
-        //If it's a synchronous implementation, don't forget setting the 'messageReceived' attribute
-        this.messageReceived = {data: 'someValue'};
+        this.executeHookEvent('onFirstHook', {revertedFirst: this.first.split('').reverse().join('')});
+        this.executeHookEvent('onSecondHook', {second: this.second.split('').join('.')});
     }
 
 }

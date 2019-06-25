@@ -1,7 +1,7 @@
-import {Asserter, Assertion, TestModel} from 'enqueuer-plugins-template';
+import {Asserter, Assertion, OutputTestModel} from 'enqueuer';
 
 export class MyAsserter implements Asserter {
-    assert(assertion: Assertion, literal: any): TestModel {
+    assert(assertion: Assertion, literal: any): OutputTestModel {
         return {
             name: assertion.name,
             valid: assertion.assertThat == assertion.is,

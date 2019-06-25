@@ -1,4 +1,4 @@
-import {ReportFormatter, RequisitionModel} from 'enqueuer-plugins-template';
+import {ReportFormatter, OutputRequisitionModel as RequisitionModel} from 'enqueuer';
 
 export class MyReportFormatter implements ReportFormatter {
 
