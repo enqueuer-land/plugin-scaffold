@@ -1,6 +1,6 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/enqueuer-land/plugin-scaffold.svg)](https://greenkeeper.io/)
 
-Save time and headaches, and create a more easily maintainable [enqueuer](http://github.com/enqueuer-land/enqueuer) plugins
+This project intends to save you time and headaches creating more easily [enqueuer](http://github.com/enqueuer-land/enqueuer) plugins.
 This canonical version can serve as a reference, or a starting point all on its own.
 
 #### Get it

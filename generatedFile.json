@@ -1,7 +1,7 @@
 {
   "valid": true,
   "name": "enqueuer",
-  "id": "2343110385_06c15b6ddd_451262",
+  "id": "0011440543_06c15b6ddd_79392",
   "level": 0,
   "subscriptions": [],
   "publishers": [],
@@ -10,7 +10,7 @@
       "valid": true,
       "tests": [],
       "arguments": {
-        "elapsedTime": 1
+        "elapsedTime": 0
       }
     },
     "onFinish": {
@@ -26,19 +26,19 @@
     }
   },
   "time": {
-    "startTime": "2019-06-25T02:43:11.389Z",
-    "endTime": "2019-06-25T02:43:11.403Z",
+    "startTime": "2019-06-25T03:11:44.546Z",
+    "endTime": "2019-06-25T03:11:44.560Z",
     "totalTime": 14
   },
   "requisitions": [
     {
       "valid": true,
       "name": "examples/test.yml",
-      "id": "2343110386_528889b4ca_609285",
+      "id": "0011440543_528889b4ca_292874",
       "level": 1,
       "subscriptions": [
         {
-          "id": "2343110386_1694741ea9_36214",
+          "id": "0011440543_1694741ea9_650449",
           "name": "Subscription #0",
           "type": "my-plugin",
           "hooks": {
@@ -51,7 +51,7 @@
             },
             "onFinish": {
               "arguments": {
-                "elapsedTime": 7
+                "elapsedTime": 8
               },
               "tests": [
                 {
@@ -65,7 +65,7 @@
             "onSubscribed": {
               "arguments": {
                 "subscribed": "yay",
-                "elapsedTime": 2
+                "elapsedTime": 3
               },
               "tests": [
                 {
@@ -80,7 +80,7 @@
               "arguments": {
                 "value": "string",
                 "numeral": 123,
-                "elapsedTime": 4
+                "elapsedTime": 5
               },
               "tests": [
                 {
@@ -112,18 +112,18 @@
             }
           },
           "valid": true,
-          "subscriptionTime": "2019-06-25T02:43:11.397Z"
+          "subscriptionTime": "2019-06-25T03:11:44.553Z"
         }
       ],
       "publishers": [
         {
-          "id": "2343110386_78244f2ddb_136973",
+          "id": "0011440543_78244f2ddb_166188",
           "name": "Publisher #0",
           "valid": true,
           "hooks": {
             "onInit": {
               "arguments": {
-                "elapsedTime": 1
+                "elapsedTime": 0
               },
               "tests": [],
               "valid": true
@@ -171,7 +171,7 @@
             }
           },
           "type": "my-plugin",
-          "publishTime": "2019-06-25T02:43:11.399Z"
+          "publishTime": "2019-06-25T03:11:44.556Z"
         }
       ],
       "hooks": {
@@ -191,8 +191,8 @@
         }
       },
       "time": {
-        "startTime": "2019-06-25T02:43:11.392Z",
-        "endTime": "2019-06-25T02:43:11.401Z",
+        "startTime": "2019-06-25T03:11:44.549Z",
+        "endTime": "2019-06-25T03:11:44.558Z",
         "totalTime": 9
       },
       "requisitions": [],
