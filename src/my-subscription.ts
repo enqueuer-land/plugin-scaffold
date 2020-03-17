@@ -6,9 +6,12 @@ export class MySubscription extends Subscription {
         super(subscriptionModel);
     }
 
-    public async receiveMessage(): Promise<void> {
+    public async receiveMessage(): Promise<any> {
         //Get the message and send it back as this method return
         this.executeHookEvent('onMessageReceived', {value: this.received, numeral: this.number});
+        //This value below is printed in 'onFinish::message received' test as 'prove' it actually received anything.
+        // If no value is returned but the promise does not fail, a default value is printed.
+        return {value: this.received, numeral: this.number};
     }
 
     public async subscribe(): Promise<void> {
@@ -22,9 +25,8 @@ export class MySubscription extends Subscription {
     }
 
     public async sendResponse(): Promise<void> {
-        //If it's a synchronous protocol, feel free to send a response back
-        console.log('virgs');
-        this.executeHookEvent('onResponseSent', {response: 'sync'});
+        //Feel free execute any other hook
+        this.executeHookEvent('onResponseSent', {response: 'not sync'});
     }
 
 }
