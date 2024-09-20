@@ -34,6 +34,6 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "enqueuer": "^5.1.4"
+    "enqueuer": "^6.0.0"
   }
 }
